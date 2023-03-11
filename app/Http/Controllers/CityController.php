@@ -9,11 +9,13 @@ class CityController extends Controller
 {
     public function index()
     {
-        return view('city.index');
+        $cities = City::all(); // select * from city
+        return view('city.index', compact('cities'));
     }
 
     public function create()
     {
+
         return 'ini adalah halaman untuk menampilkan formulir menambah data baru';
     }
 

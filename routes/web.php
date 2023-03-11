@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-Route::get('city', [CityController::class, 'index']);
+Route::get('/city', [CityController::class, 'index']);
 
